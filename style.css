@@ -20,6 +20,7 @@ body{
 margin: auto;
 margin:0rem 9rem;
 padding: 3rem 0rem;
+
 }
 .text-align{
     text-align: center;
@@ -37,9 +38,12 @@ padding: 3rem 0rem;
     padding: .27rem 1.25rem;
 }
 .body-container{
-    margin-top: 3rem;
-    gap:3.5rem;
-    display: flex;
+    background-image: url("./images/banner.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 44rem;
+    /* gap:3.5rem; */
+    /* display: flex; */
 }
 .heading-style{
 color: rgb(255, 255, 255);
@@ -72,12 +76,11 @@ line-height: 1.50rem;
     background-color: transparent;
     margin-left: 1rem;
 }
-.
 /* first section */
-.first-container{
-    max-height: 44rem;
-    background-color:linear-gradient(180deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
-    height: 44rem;
+.banner{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    height: auto;
+    
 }
 .fitness-size{
     font-size: 36px;
@@ -111,6 +114,7 @@ font-size: 4rem;
 font-weight: 900;
 color: rgb(255, 255, 255);
 line-height: 120%;
+padding-top: 8rem;
 }
 .contain-banner span{
     font-size: 4rem;
@@ -122,8 +126,10 @@ line-height: 120%;
 .contain-banner p{
     margin: 1.50rem 0rem;
 }
-.banner-img img{
-    position: relative;
+.get-image{
+    /* background-image: url("../Assignment-2/images/banner.png"); */
+    /* position: relative; */
+    /* display: block; */
 }
 /* habit section */
 .habit-container{
@@ -145,6 +151,26 @@ font-weight: 600;
 padding-top: 1.25rem;
 padding-bottom: .75rem;
 }
+/* run extra section */
+.extra-container{
+    border-radius: 18px;
+   background-color: rgb(34, 34, 34);
+   padding: 3rem;
+   margin-top: 5rem;
+   display: flex;
+
+}
+.run-image img{
+    border-radius: 18px;
+    width: 22rem;
+}
+.run-text{
+    padding-right: 8rem;
+}
+.run-text button{
+    margin-top: 2rem;
+    padding: 1rem 2.56rem;
+}
 /* responsive */
 @media only screen and (max-width: 576px) {
 .container-style,
@@ -163,9 +189,26 @@ ul{
     margin-top: .37rem;
 }
 .body-container,
-.habit-container
+.habit-container,
+.extra-container
 {
     flex-direction: column;
+}
+.extra-container{
+    padding: 2rem;
+}
+.run-image img{
+    margin-top: 2rem;
+    width: 100%;
+}
+.run-text{
+    padding-right: 0rem;
+}
+.run-text button{
+    width: 100%;
+}
+.extra-container{
+    margin-top: 1rem;
 }
 .habit-contain{
     margin-bottom: 1.75rem;
