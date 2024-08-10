@@ -12,10 +12,17 @@ body{
     box-sizing: border-box;
 }
 /* style related section */
+.main-container{
+    margin: auto;
+    margin:0rem 9rem;    
+}
 .container-style{
 margin: auto;
 margin:0rem 9rem;
 padding: 3rem 0rem;
+}
+.text-align{
+    text-align: center;
 }
 .contain-box{
     display: flex;
@@ -23,7 +30,6 @@ padding: 3rem 0rem;
 }
 .primary-color{
     color: rgb(230, 83, 60);
-    font-family: Inter;  
 }
 .primary-bg{
     border-radius: 46px;
@@ -31,16 +37,21 @@ padding: 3rem 0rem;
     padding: .27rem 1.25rem;
 }
 .body-container{
-    margin-top: 4.50rem;
-    gap: 3.50rem;
+    margin-top: 3rem;
+    gap:3.5rem;
     display: flex;
 }
-.paragrap-color{
+.heading-style{
+color: rgb(255, 255, 255);
+font-size: 2.50rem;
+font-weight: 900;
+padding-bottom: .90rem;
+}
+.paragraph-color{
 color: rgba(255, 255, 255, 0.5);
-font-family: Inter;
-font-size: 16px;
+font-size:.90rem;
 font-weight: 400;
-line-height: 24px;
+line-height: 1.50rem;
 }
 .btn-1{
     padding: 1rem 2rem;
@@ -61,10 +72,11 @@ line-height: 24px;
     background-color: transparent;
     margin-left: 1rem;
 }
+.
 /* first section */
 .first-container{
     max-height: 44rem;
-    background:linear-gradient(180deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background-color:linear-gradient(180deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
     height: 44rem;
 }
 .fitness-size{
@@ -89,6 +101,11 @@ li{
 .bars-icon{
     display: none;
 }
+.contain-banner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .contain-banner h1{
 font-size: 4rem;
 font-weight: 900;
@@ -105,14 +122,34 @@ line-height: 120%;
 .contain-banner p{
     margin: 1.50rem 0rem;
 }
-.banner-img{
-    background-image: url('./images/banner.png');
-    /* background-size: cover;
-    position: relative; */
+.banner-img img{
+    position: relative;
+}
+/* habit section */
+.habit-container{
+    margin-top: 4rem;
+}
+.habit-contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.habit-contain img{
+    border-radius: 50%;
+}
+.habit-contain h3{
+color: rgb(255, 255, 255);
+font-size:1.25rem;
+font-weight: 600;
+padding-top: 1.25rem;
+padding-bottom: .75rem;
 }
 /* responsive */
 @media only screen and (max-width: 576px) {
-.container-style{
+.container-style,
+.main-container
+ {
     margin: auto;
     padding: 1rem 1rem;
 }
@@ -125,8 +162,13 @@ ul{
     font-size: 1.50rem;
     margin-top: .37rem;
 }
-.body-container{
+.body-container,
+.habit-container
+{
     flex-direction: column;
+}
+.habit-contain{
+    margin-bottom: 1.75rem;
 }
 }
 
