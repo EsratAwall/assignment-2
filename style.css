@@ -14,12 +14,12 @@ body{
 /* style related section */
 .main-container{
     margin: auto;
-    margin:0rem 9rem;    
+    margin:0rem 9rem;  
+    padding: 3rem 0rem;  
 }
 .container-style{
 margin: auto;
 margin:0rem 9rem;
-padding: 3rem 0rem;
 
 }
 .text-align{
@@ -38,12 +38,9 @@ padding: 3rem 0rem;
     padding: .27rem 1.25rem;
 }
 .body-container{
-    background-image: url("./images/banner.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    height: 44rem;
-    /* gap:3.5rem; */
-    /* display: flex; */
+    /* height: 44rem; */
+    display: flex;
+   justify-content: space-between;
 }
 .heading-style{
 color: rgb(255, 255, 255);
@@ -78,9 +75,10 @@ line-height: 1.50rem;
 }
 /* first section */
 .banner{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%),url('./banner.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
     height: auto;
-    
 }
 .fitness-size{
     font-size: 2rem;
@@ -94,6 +92,7 @@ ul{
     display: flex; 
     align-items: center;
     padding: .28rem 1rem;
+    margin-bottom: 7rem;
 }
 li{
     text-decoration: none;
@@ -103,6 +102,13 @@ li{
 }
 .bars-icon{
     display: none;
+}
+
+.heading-overlay{
+color: rgb(255, 255, 255);
+font-size: 2rem;
+font-weight: 900;
+padding-bottom: .4rem;
 }
 .contain-banner{
     display: flex;
@@ -114,22 +120,33 @@ font-size: 4rem;
 font-weight: 900;
 color: rgb(255, 255, 255);
 line-height: 120%;
-padding-top: 8rem;
 }
 .contain-banner span{
     font-size: 4rem;
     font-weight:400;
     color: rgb(255, 255, 255);
-    line-height: 120%;  
     font-family: "Pacifico", cursive; 
 }
 .contain-banner p{
     margin: 1.50rem 0rem;
 }
 .get-image{
-    /* background-image: url("../Assignment-2/images/banner.png"); */
-    /* position: relative; */
-    /* display: block; */
+   margin-top: 1rem;
+   position: relative;
+  
+}
+.get-image img{
+  
+}
+.free-overlay{
+    /* margin-top: -25rem; */
+    padding: .50rem 1.4rem;
+    position: absolute;
+    /* margin-right: -20rem !important; */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
 }
 /* habit section */
 .habit-container{
@@ -224,13 +241,56 @@ th{
 }
 .select-style{
     width: 100%;
-    padding: .60rem 1.60rem !important;
+    padding: .60rem 1.60rem ;
     border-radius: .50rem;
     background-color:rgba(255, 255, 255, 0.1);
     color: rgba(146, 144, 144, 0.6);
     font-size:1rem;
     font-weight: 400;
     border: none;
+}
+/* team section */
+.team-container{
+    border-radius: 18px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color:rgb(34, 34, 34);
+    gap: 1.5rem;
+}
+.team-contain{
+   margin-top: 11rem;
+}
+.team-text{
+color:white;
+font-size:1.25rem;
+font-weight: 600;
+/* padding-top: 1.25rem;
+padding-bottom: .75rem; */
+}
+.image-gallary{
+    border-radius: 18px;
+    height:17rem;
+    background-size: cover;
+    padding: 2rem;
+}
+.team-img1{
+    background-image:linear-gradient(180.00deg,transparent, rgb(17, 17, 17)),url('./images/trainer1.png');   
+}
+.team-img2{
+    background-image:linear-gradient(180.00deg,transparent, rgb(17, 17, 17)), url('./images/trainer2.png');
+}
+.team-img3{
+    background-image:linear-gradient(180.00deg,transparent, rgb(17, 17, 17)), url('./images/trainer3.png');
+}
+.team-img4{
+    background-image:linear-gradient(180.00deg,transparent, rgb(17, 17, 17)), url('./images/trainer4.png');
+}
+.team-img5{
+    background-image:linear-gradient(180.00deg,transparent, rgb(17, 17, 17)), url('./images/trainer5.png');
+}
+.team-img6{
+    background-image:linear-gradient(180.00deg,transparent, rgb(17, 17, 17)), url('./images/trainer6.png');
 }
 /* responsive */
 @media only screen and (max-width: 576px) {
@@ -246,14 +306,14 @@ ul{
     display: none;
 }
 .contain-banner h1{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 800;
 }
 .fitness-size{
     font-size: 1.80rem;
 }
 .contain-banner span{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
 }
 .paragraph-color{
@@ -263,6 +323,7 @@ ul{
 .heading-style{
     font-size: 1.90rem;
     font-weight: 800;
+    padding-top: 2rem;
 }
 .btn-div{
     display: flex; 
@@ -301,7 +362,7 @@ ul{
     width: 100%;
 }
 .extra-container{
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 .habit-contain{
     margin-bottom: 1.75rem;
@@ -314,6 +375,10 @@ ul{
 }
 .input-container{
     padding: 0;
+}
+.team-container{
+    padding: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
 }
 }
 
