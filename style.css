@@ -189,9 +189,6 @@ padding-bottom: .75rem;
     padding: 1rem 2.56rem;
 }
 /* BMI Calculator */
-.input-container{
-    padding-right: 7rem;
-}
 .bmi-contain{
     margin: 5rem 0rem;
     margin-left: 16rem;
@@ -268,6 +265,9 @@ font-weight: 600;
 /* padding-top: 1.25rem;
 padding-bottom: .75rem; */
 }
+.meet-text{
+     margin-top: 5rem;
+}
 .image-gallary{
     border-radius: 18px;
     height:17rem;
@@ -292,12 +292,58 @@ padding-bottom: .75rem; */
 .team-img6{
     background-image:linear-gradient(180.00deg,transparent, rgb(17, 17, 17)), url('./images/trainer6.png');
 }
+/* footer section */
+.footer-text{
+    color: rgb(230, 83, 60);
+    font-style: italic;
+    font-size: 2.50rem;
+    font-weight: 900;
+     padding-top:1rem ;
+     padding-bottom: .90rem;
+}
+.foo-ser{
+    padding-top: 2.35rem;
+    color: rgba(255, 255, 255, 0.5);
+font-size:1rem;
+font-weight: 400;
+}
+.footer-para{
+color: rgba(255, 255, 255, 0.5);
+font-size:1rem;
+font-weight: 400;
+padding-top: 1rem;
+}
+.footer-container{
+    background-color:rgb(34, 34, 34);  
+    margin-top: 4rem; 
+    padding: 3rem 8rem;
+}
+.footer-contain{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding-bottom: 4rem;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(137, 137, 137, 0.5);
+}
+.first-footer{
+    width: 30rem;
+}
+.footer-last{
+    color: rgba(255, 255, 255, 0.5);
+    font-size:1rem;
+    font-weight: 400;
+    padding-top: 2rem;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* responsive */
 @media only screen and (max-width: 576px) {
 .container-style,
 .main-container,
 .bmi-contain,
-.bmi-calculator
+.bmi-calculator,
+.footer-container
  {
     margin: auto;
     padding: 1rem 1rem;
@@ -368,7 +414,8 @@ ul{
     margin-bottom: 1.75rem;
 }
 .bmi-calculator,
-.bmi-table{
+.bmi-table,
+.meet-text{
     margin-top: 3rem;
     padding: 1rem; 
     width: 100%; 
@@ -376,9 +423,18 @@ ul{
 .input-container{
     padding: 0;
 }
-.team-container{
+.team-container,
+.footer-contain
+{
     padding: 1.5rem;
     grid-template-columns: repeat(1, 1fr);
+}
+.footer-text{
+    font-size: 1.97rem;
+    font-weight:800;
+}
+.first-footer{
+    width: 100%;
 }
 }
 
