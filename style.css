@@ -30,7 +30,6 @@ margin:0rem 9rem;
 {
     display: flex;
     justify-content: space-between;
-    border: 2px solid white;
 }
 .primary-color{
     color: rgb(230, 83, 60);
@@ -125,7 +124,6 @@ line-height: 120%;
    position: relative;
    background-image: url("./banner.png");
    height:36rem;
-   border: 2px solid red;
    width:28rem;
    background-repeat: no-repeat;
    margin-top: -6rem;
@@ -184,6 +182,19 @@ font-size:1.25rem;
 font-weight: 600;
 padding-top: 1.25rem;
 padding-bottom: .75rem;
+}
+/* built section */
+.built-container{
+    background-image:linear-gradient(to right, rgba(28, 27, 27, 0), rgb(26, 26, 26)),url("./images/istockphoto-1277242852-612x612.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5rem;
+}
+.built-contain{
+    background-color: rgb(35, 35, 35);
+    width: 50rem;
+    padding: 6rem 5rem 6rem 9rem; 
 }
 /* run extra section */
 .extra-container{
@@ -279,8 +290,6 @@ th{
 color:white;
 font-size:1.25rem;
 font-weight: 600;
-/* padding-top: 1.25rem;
-padding-bottom: .75rem; */
 }
 .meet-text{
      margin-top: 5rem;
@@ -468,6 +477,15 @@ ul{
  .free-overtwo{
      margin-left:2rem;   
  }
+ .built-container{
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+}
+.built-contain{
+    width: 100%;
+    padding:2rem; 
+    border-radius:18px ;
+}
 }
 
 
